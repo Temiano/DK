@@ -1,0 +1,88 @@
+body{
+    background-color: lightgrey;
+    font-family: italic;
+}
+.actor{
+    margin-top:20px;
+    margin-left:10px;
+    button{
+        border: 4px solid white;
+        border-radius: 10px;
+    }
+}
+.container{
+   .btn{
+        text-decoration-color: white;
+        background-color: #ff6e26;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    p{
+        font-size: 15px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.card{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 90%;
+    border: 2px solid black;
+    .btn{
+        background-color: #ff6e26;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+}
+.card2{
+    p{
+        font-size: 25px;
+        margin: 5px;
+    }
+    img{
+        border: 3px solid snow;
+    }
+    .btn{
+        background-color: #ff6e26;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    margin-bottom: 5px;
+    border: 2px solid snow;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+.card-header{
+    font-size: 30px;
+    font-style: Times New Roman;
+}
+.card-body img{
+    height: 500px;
+    float: left;
+    margin-right: 30px;
+}
+.carousel-item{
+    border: 3px solid black;
+}
+.alert{
+    margin-top: 70px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.AcInf{
+    margin-top: 90px;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    --bs-body-bg: lightgray;
+    border: 3px solid black;
+}
+.table-info {
+    --bs-table-bg: lightgray;
+    border: 3px solid black;
+}
