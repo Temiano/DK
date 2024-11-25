@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8"> 
+    <title>Лабораторная работа 5</title>
+    <link rel="stylesheet" href="style.css" />  
+    <link rel="stylesheet" href="table.css" />    
+</head>
+<body>
+     <div class = "header">
+        <mark class = "headerText">Murzakov</mark>
+        <a href="lab5.html" ; class = "link">Главная страница</a>
+        <a href="page2.html" ; class = "link">Страница 2</a>
+        <a href="table.html" ; class = "link">Страница 3</a>
+        <br/>
+    </div>
+     <div class="pageContainer">
+        <table id="myTable">
+            <caption>Таблица любимых музыкантов</caption>
+            <tr>
+                <th class = "th">№</th>
+                <th class = "th">Псевдоним</th>
+                <th class = "th">Любимые песни</th>
+                <th class = "th">Актуальность</th>
+                <th class = "th">Кратко об артисте</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Tyler, the creator</td>
+                <td>VCR Wheels, 48, 911</td>
+                <td>2024 Chromakopia</td>
+                <td>Самобытный, жесткий и ранимый</td>
+            </tr>
+                <td>2</td>
+                <td>Mac Miller</td>
+                <td>BDE, Surf, 2009</td>
+                <td>Умер в 2018, 2020 Circles</td>
+                <td>Самобытный, веселый и меланхоличный</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>King krule</td>
+                <td>Borderline, Baby blue, Rock bottom</td>
+                <td>2023 Space Heavy</td>
+                <td>Необычный, настольгичный и душевный</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Валентин стрыкало</td>
+                <td>Фанк, Бесполезно, 92</td>
+                <td>2016 Развлечение</td>
+                <td>Самобытный, забавный и меланхоличный</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Mac deMarco</td>
+                <td>Freaking out the Neighborhood, My kind of Woman</td>
+                <td>2020 Other Here Comes the Cowboy Demos</td>
+                <td>Странный, вроде весело, а че так плакать охота</td>
+            </tr>
+        </table>
+        <div class="fDesign">
+            <form id="myForm">
+                <label for="name">Псевдоним:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="songs">Любимые песни:</label>
+                <input type="text" id="songs" name="songs"><br>
+                <label for="relevance">Актуальность:</label>
+                <input type="text" id="relevance" name="relevance"><br>
+                <label for="info">Коротко об артисте:</label>
+                <input type="text" id="info" name="info"><br>
+                <input type="submit" value="Добавить">
+            </form>
+        </div>
+     </div>
+</body>
+<script>
+    document.getElementById("myForm").onsubmit = function(event) {
+      event.preventDefault();
+      var table = document.getElementById("myTable");
+      var row = table.insertRow(-1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      var cell5 = row.insertCell(4);
+      cell1.innerHTML = table.rows.length - 1;
+      cell2.innerHTML = document.getElementById("name").value; 
+      cell3.innerHTML = document.getElementById("songs").value;
+      cell4.innerHTML = document.getElementById("relevance").value;
+      cell5.innerHTML = document.getElementById("info").value;
+      document.getElementById('myForm').reset();
+    };
+</script>
+</html>
