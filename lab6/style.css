@@ -1,0 +1,40 @@
+body{
+    background-color: lightgrey;
+}
+.actor{
+    margin-top:20px;
+    margin-left:10px;
+    button{
+        border: 4px solid white;
+        border-radius: 10px;
+    }
+}
+.card{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 90%;
+    border: 2px solid black;
+    .btn{
+        background-color: #ff6e26;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+}
+.card-header{
+    font-size: 30px;
+    font-style: Times New Roman;
+}
+.card-body img{
+    height: 500px;
+    float: left;
+    margin-right: 30px;
+}
+.carousel-item{
+    border: 3px solid black;
+}
+.alert{
+    margin-top: 70px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
